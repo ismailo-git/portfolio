@@ -173,123 +173,16 @@ h3 {
 
 /*============Portfolio Section===============***/
 
-.portfolio {
 
-	padding-top: 3rem;
-}
-.portfolio .portfolio-1 {
 
+/**==============Contact Section Start====================**/
+
+.contact .row {
+	border: 1px solid black;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	align-items: center;
-}
-
-.portfolio .portfolio-1 .image  {
-
-	flex: 1 1 30rem;
-}
-
-.portfolio .portfolio-1 .content {
-
-	flex: 1 1 30rem;
-}
-
-/*****=========Contact Section=======**********/
-
-
-.contact {
-
-	
-	padding-top: 1rem;
-	text-align: center;
-	position: relative;
-	
-}
-
-.contact .address-info {
-
-	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 1rem;
-	padding: 1rem 0;
+	gap: 1.5rem;
 }
 
-.contact .address-info .box {
-
-	flex: 1 1 20rem;
-}
-
-.contact .address-info .box i {
-
-	font-size: 1.8rem;
-	color: #8f2d56;
-}
-
-.contact .address-info .box p {
-
-	color: #6c757d;
-	font-size: 1rem;
-	font-weight: bold;
-}
-
-
-.contact-container {
-
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-
-}
-
-.contact-container .left {
-
-	flex: 1 1 20rem;
-}
-
-.contact-container .right {
-
-	flex: 1 1 30rem;
-}
-
-
-.contact-container input {
-
-	width: 80%;
-	padding: 10px 15px;
-	margin: 4px;
-	border: 1px solid #dcdfe6;
-	font-family: 'Catamaran', sans-serif;
-	color: #808285;
-	font-weight: bold;
-}
-
-.contact-container textarea {
-
-	width: 80%;
-	padding: 6px;
-	resize: none;
-	border: 1px solid #dcdfe6;
-	font-family: 'Catamaran', sans-serif;
-	padding: 10px 15px;
-	font-weight: bold;
-	color: #808285;
-}
-
-.contact-container input[type="submit"] {
-
-	background-color: #8f2d56;
-	color: #fff;
-	cursor: pointer;
-	padding: 15px;
-	border-radius: 5px;
-	font-weight: bold;
-	font-size: 0.9rem;
-	font-family: cursive;
-}
-
-
-/**==============End CONTACT Section================**/
+/**==============Contact Section End ================**/
