@@ -181,8 +181,34 @@ h3 {
 	border: 1px solid black;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 1.5rem;
 }
 
+.contact .row .image {
+
+	flex: 1 1 10rem;
+}
+
+.contact .row .image img {
+
+	width: 100%;
+}
+
+.contact .row form {
+
+	flex: 1 1 30rem;
+	border: 1px solid black;
+}
+
+.contact .row form .box {
+
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	border-radius: .5rem;
+	font-size: 1.8rem;
+	
+}
 /**==============Contact Section End ================**/
