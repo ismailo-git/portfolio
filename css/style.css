@@ -19,9 +19,10 @@ html {
 body {
   color: var(--text-color);
   margin: 0;
-  font-size: 16px;
+  font-size: 0.875rem;
   font-family: 'Jost', sans-serif;
   background-color: #f5f6fa;
+  line-height: 1.5;
   
 }
 
@@ -39,10 +40,10 @@ main {
  */
 
 h1 {
-  font-size: 4em;
-  margin: 0.2em 0;
+  
   font-family: "zoula-family";
   word-spacing: 1.2rem;
+  font-size: 3rem;
 }
 
 /* Grouping content
@@ -378,11 +379,24 @@ html.is-animating .transition-fade {
   opacity: 0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+
+  letter-spacing: 0.08rem ;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  
+}
+
 .heading {
 
   color: #ff006e;
   text-align: center;
   margin: 2rem 0;
+  font-family: cursive;
+  font-size: 1.3rem;
 }
 
 .container {
@@ -409,7 +423,7 @@ html.is-animating .transition-fade {
 .header .navbar a {
 
 	margin-left: 2rem;
-	color: #495057;
+	color: #4b4b4b;
 	text-transform: uppercase;
 	font-size: .7rem;
 	font-weight: 600;
@@ -437,23 +451,32 @@ html.is-animating .transition-fade {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	align-items: center;
-	min-height: 100vh;
+	min-height: 80vh;
 	position: relative;
 	
 }
 
 
-.home h1 {
+.home .home-content h1 {
   color: #495057;
 	font-weight: 500;
 }
-.home p {
+
+.home .home-content h3 {
+
+  font-size: 1.2rem;
+}
+.home .home-content span {
+
+  color: #ff006e;
+}
+.home .home-content p {
 
 	line-height: 1.6;
   font-size: 1rem;
 }
 
-.home .social {
+/* .home .social {
 
 	margin-top: 1rem;
 	display: flex;
@@ -472,7 +495,7 @@ html.is-animating .transition-fade {
 	background-color: #00a8ff;
 	font-size: 18px;
 	color: #fff;
-}
+} */
 
 /* End Home
   ====================================================== */
@@ -492,7 +515,7 @@ html.is-animating .transition-fade {
 }
 .portfolio .row{
  
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   margin: 2rem 0;
   padding: 2rem 1rem;
   display: flex;
@@ -507,26 +530,53 @@ html.is-animating .transition-fade {
   
 }
 
-.portfolio .row:hover {
+.portfolio .row {
 
-  will-change: transform;
+  /* will-change: transform; */
   /* transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05); */
 }
 
 .portfolio img {
 
   width: 300px;
+  border-radius: 10px;
 }
 
 .portfolio .content {
 
    max-width: 600px;
+   line-height: 1.6;
 }
 
 .portfolio .content p {
 
   padding: 0rem 0.5rem;
-  color: red;
+  font-size: 1.110rem;
+  line-height: 1.55;
+  
+}
+
+.portfolio-icons {
+
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+.portfolio-icons a {
+
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-decoration: underline;
+  font-family: cursive;
+}
+.portfolio-icons i {
+
+  margin-right: 0.5rem;
+  font-size: 1.4rem;
+  color: #495057;
 }
 
 /* End Portfolio
@@ -534,8 +584,30 @@ html.is-animating .transition-fade {
 
 /* Start Skills
   ====================================================== */
+.skills {
 
 
+}
+
+.skills .skills-container {
+
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  gap: 2rem;
+}
+
+.skills .skills-container .box {
+
+  width: 230px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  
+}
 /* End Skills
   ====================================================== */
 
