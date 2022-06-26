@@ -6,6 +6,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  overflow-x: hidden;
 }
 
 /* Sections
@@ -16,6 +17,7 @@ html {
  */
 
 body {
+  color: var(--text-color);
   margin: 0;
   font-size: 16px;
   font-family: 'Jost', sans-serif;
@@ -353,7 +355,7 @@ template {
 }
 :root {
 	
- --text-color: #343434;
+ --text-color: #495057;
 }
 
 @font-face {
@@ -389,26 +391,41 @@ html.is-animating .transition-fade {
 	margin: 0 auto;
 }
 .header {
-
+  background-image: url(../imgs/header-bg.png);
+  background-size: cover;
+  background-position: bottom;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: .5rem 3rem;
+  
 }
 
-.header .logo {
-	width: 80px;	
+.header .logo img {
+	width: 90px;
+  height: auto;	
 }
 
 .header .navbar a {
 
 	margin-left: 2rem;
-	color: #808285;
+	color: #495057;
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: .7rem;
 	font-weight: 600;
 }
 
+.header .navbar a:hover {
+
+  color: #ff006e;
+  transition: 0.5s;
+}
+.header #menu-bars {
+
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: none;
+}
 /* End Header
   ====================================================== */
 
@@ -420,21 +437,20 @@ html.is-animating .transition-fade {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	align-items: center;
-	min-height: 80vh;
+	min-height: 100vh;
 	position: relative;
 	
 }
 
 
 .home h1 {
-
-	
-	
+  color: #495057;
 	font-weight: 500;
 }
 .home p {
 
-	
+	line-height: 1.6;
+  font-size: 1rem;
 }
 
 .home .social {
@@ -476,9 +492,9 @@ html.is-animating .transition-fade {
 }
 .portfolio .row{
  
- box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  margin: 1rem 0;
-  padding: 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 2rem 0;
+  padding: 2rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,13 +502,15 @@ html.is-animating .transition-fade {
   gap: 2rem;
   transition: ease .45s;
   cursor: pointer;
+  max-width: 1000px;
+  margin: auto;
   
 }
 
 .portfolio .row:hover {
 
   will-change: transform;
-  transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
+  /* transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05); */
 }
 
 .portfolio img {
@@ -502,7 +520,13 @@ html.is-animating .transition-fade {
 
 .portfolio .content {
 
-  width: 600px;
+   max-width: 600px;
+}
+
+.portfolio .content p {
+
+  padding: 0rem 0.5rem;
+  color: red;
 }
 
 /* End Portfolio
@@ -510,50 +534,48 @@ html.is-animating .transition-fade {
 
 /* Start Skills
   ====================================================== */
-.techno {
 
-	height: 90vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-}
-
-.techno h2 {
-
-	margin: 3rem 0;	
-	/* font-family: "zoula-family"; */
-	color: #5e6472;
-	font-size: 2rem;
-	font-weight: lighter;
-}
-.techno .box-container{
-
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	gap: 2rem;
-}
-
-.techno .box-container .box {
-
-	flex: 1 1 15rem;
-	
-}
-.techno .box-container .box i {
-
-	font-size: 5rem;
-}
-
-.techno .box-container .box h4 {
-
-	text-transform: uppercase;
-	font-family: cursive;
-	color: #5e6472;
-	font-size: .8rem;
-}
 
 /* End Skills
   ====================================================== */
+
+
+
+
+/*====================Loader================*/
+
+/* .loader {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.loader img {
+
+  width: 60px;
+}
+
+.loader.fade-out {
+
+  top: 110%;
+  opacity: 0;
+} */
+
+
+
+  /*========================Media Queries====================*/
+
+
+  @media (max-width:768px) {
+    
+    
+  }
