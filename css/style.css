@@ -515,8 +515,8 @@ h4 {
 }
 .portfolio .row{
  
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-  margin: 2rem 0;
+
+  margin: 3rem 0;
   padding: 2rem 1rem;
   display: flex;
   justify-content: center;
@@ -530,11 +530,11 @@ h4 {
   
 }
 
-.portfolio .row {
+.portfolio .row:hover {
 
-  /* will-change: transform; */
-  /* transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05); */
+  transform: translateY(-1rem);
 }
+
 
 .portfolio img {
 
@@ -559,24 +559,28 @@ h4 {
 .portfolio-icons {
 
   display: flex;
-  flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   
 }
 
-.portfolio-icons a {
+.portfolio-icons .portfolio-btn {
 
   display: inline-block;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  text-decoration: underline;
-  font-family: cursive;
+  background-color: rgb(99, 86, 229);
+  color: #fff;
+  margin: 5px 0;
+  width: 150px;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: bold;
 }
 .portfolio-icons i {
 
   margin-right: 0.5rem;
   font-size: 1.4rem;
-  color: #495057;
+  color: #fff;
 }
 
 /* End Portfolio
@@ -608,6 +612,9 @@ h4 {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   
 }
+
+
+
 /* End Skills
   ====================================================== */
 
@@ -642,6 +649,28 @@ h4 {
   opacity: 0;
 } */
 
+
+
+/*==========================Contact Section=====================*/
+.contact .row {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact .row iframe {
+
+  max-width: 600px;
+}
+
+.contact .row .form {
+
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
 
 
   /*========================Media Queries====================*/
