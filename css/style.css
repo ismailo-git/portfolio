@@ -652,28 +652,88 @@ h4 {
 
 
 /*==========================Contact Section=====================*/
+.contact {
+
+
+}
 .contact .row {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+}
+
+.contact .info-container {
+
+  
+  padding: 2rem;
+}
+
+.contact .info-container .box-container {
+
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+
+  
+}
+
+.contact .info-container .box-container .box {
+
+    flex: 1 1 10rem;
+}
+
+.contact .form {
+
+  flex: 1 1 30rem;
+  padding: 2rem;
+  
+  
+}
+.contact .row form .inputBox {
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
-.contact .row iframe {
+.contact .row form .inputBox input {
 
-  max-width: 600px;
+  width: 80%;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  color: #2C3E50;
+  border-radius: 2px;
 }
 
-.contact .row .form {
+.contact .row form .inputBox textarea {
 
-  width: 600px;
-  display: flex;
-  flex-direction: column;
+  width: 80%;
+  resize: none;
+  height: 10rem;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 2px;
+  columns: #2C3E50;
+  padding: 10px;
+  
 }
 
+.contact .row form .btn {
+  padding: 1rem 3rem;
+  cursor: pointer;
+  background-color: #ff006e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
 
-  /*========================Media Queries====================*/
+/*========================Media Queries====================*/
 
 
   @media (max-width:768px) {
