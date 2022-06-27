@@ -622,8 +622,7 @@ h4 {
 
 
 /*====================Loader================*/
-
-/* .loader {
+ .loader {
 
   position: fixed;
   top: 0;
@@ -647,7 +646,7 @@ h4 {
 
   top: 110%;
   opacity: 0;
-} */
+} 
 
 
 
