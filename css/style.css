@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+
+ul {
+
+    list-style-type: none;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+
+    line-height: 1.5;
+}
+
+.navbar {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 5rem;
+}
